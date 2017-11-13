@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Skull.master.cs" Inherits="sssaas.Skull" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+       <style>
+        *{margin:0px;padding:0px;}
+        html, body, form {height:100%;}
+        header{width:100%;height:70px;box-shadow:0px 0px 7px #777;line-height:70px}
+        main{background-image:url('http://www.sarajevotimes.com/wp-content/uploads/2015/06/zelengora-mountain.jpg');background-position:50% 50%;background-size:cover;width:100%;height:calc(100% - 70px);}
+    </style>
+    <link href="CSS/layout-9fd1431586.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <div style="float:left;">
+                Logo
+            </div>
+            <nav style="float:right">
+                <a href="/Login.aspx">Login</a>
+                <a href="/Register.aspx">Register</a>
+            </nav>
+        </header>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
